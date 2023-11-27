@@ -1,0 +1,16 @@
+const fs = require('fs');
+
+// Content to be written to the emails.txt file
+const emailContent = `
+Hello,
+
+This is the content of the email.
+
+Best regards,
+Your Name
+`;
+
+// Write content to the emails.txt file
+fs.writeFileSync('emails.txt', emailContent);
+
+console.log('emails.txt created with content.');
